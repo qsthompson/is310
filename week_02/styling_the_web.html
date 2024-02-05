@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hiiiiiiiiiiiiiiiiiiiiiiiiiiii</title>
+	</head>
+<style>
+body {
+	--bg: #fff;
+	--fg: #000;
+	--oo: #eee;
+	font-family: sans-serif;
+	color: var(--fg);
+	background: var(--oo);
+	margin: 0;
+	padding: 0;
+}
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.card {
+	border-radius: 1em;
+	border-top-left-radius: 0;
+	padding: 2em;
+	margin: 2em;
+	border: .2em solid var(--fg);
+	min-width: 28%;
+	background: var(--bg);
+}
+.card:hover {
+	transform: translateY(-.1em);
+}
+.hugetext {
+	
+	font-size: 8em;
+	color: var(--fg);
+	text-shadow: -.03em .03em 0 var(--bg),
+	 .03em .03em 0 var(--bg),
+	 .03em -.03em 0 var(--bg),
+	-.03em -.03em 0 var(--bg);
+}
+</style>
+<body>
+	<div id="container">
+
+		<div class="hugetext">hiii </div>
+		<div class="card">
+			<h1 id="hi">
+				hiii
+			</h1>
+			<a href="https://www.youtube.com/watch?v=G4gCJaqpSKM&themeRefresh=1">hi :)</a>
+		</div>
+	</div>
+</body>
+<script>
+	hex = "0123456789abcdef";
+	oo = "#";
+	while (oo.length < 4) {
+		i = Math.random() * (hex.length - 1);
+		oo = oo + hex.charAt(i);
+	}
+	document.body.style.setProperty('--oo', oo);
+
+	h = "h";
+	for (let i = 0; i < Math.random() * 16; i++) {
+		h = h + "i";
+	}
+	document.getElementById('hi').innerHTML = h;
+	document.title = h;
+
+</script>
+</html>
